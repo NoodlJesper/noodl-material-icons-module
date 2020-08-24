@@ -5,6 +5,15 @@ This module adds the node "Icon | Material UI" that expose the Material UI icon 
 
 ![Noodl Material UI icon font animation example](material-icon-animation.gif)
 
+## Installing
+Copy the folder Project/noodl_modules/material-icons-module into [your project folder]/noodl_modules.
+
+## Properties
+Icon style  : solid|outlined|round|sharp|two-tone
+Icon        : write the icon name, see icons available at [Material Design's icon docs](https://material.io/resources/icons/)
+Icon size   : font size in pixels
+Icon color  : set the font color, if two-tone is choosen this is translated into css filters instead
+
 ## Two-Tone style
 Two-tone style does not work with the color css property so behind the scenes the color choosen is instead translated into a css filter. This is not visible in Noodl, rather the user selects the color they want and do not need to care about if it is Two-tone styled or not.
 
