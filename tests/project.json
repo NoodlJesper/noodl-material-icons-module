@@ -1,0 +1,147 @@
+{
+    "name": "MUI Icons Module dev",
+    "components": [
+        {
+            "name": "/My tests",
+            "id": "3936da2d-21f6-20ea-0911-2a4ae18c68bf",
+            "graph": {
+                "connections": [
+                    {
+                        "fromId": "8399c237-602f-8609-2cb3-0e51675c7987",
+                        "fromProperty": "hasReachedEnd",
+                        "toId": "86111ee9-95b8-87d5-e41f-ca87694fa56d",
+                        "toProperty": "start"
+                    },
+                    {
+                        "fromId": "86111ee9-95b8-87d5-e41f-ca87694fa56d",
+                        "fromProperty": "timerFinished",
+                        "toId": "8399c237-602f-8609-2cb3-0e51675c7987",
+                        "toProperty": "replayToStart"
+                    },
+                    {
+                        "fromId": "8399c237-602f-8609-2cb3-0e51675c7987",
+                        "fromProperty": "size",
+                        "toId": "68b80362-b27a-f2df-925c-641d6186d04b",
+                        "toProperty": "size"
+                    },
+                    {
+                        "fromId": "68b80362-b27a-f2df-925c-641d6186d04b",
+                        "fromProperty": "onClick",
+                        "toId": "8399c237-602f-8609-2cb3-0e51675c7987",
+                        "toProperty": "playToEnd"
+                    }
+                ],
+                "roots": [
+                    {
+                        "id": "e8570140-710c-df7f-2314-faa1656a4f9c",
+                        "type": "Group",
+                        "x": 310,
+                        "y": 98,
+                        "parameters": {
+                            "paddingLeft": {
+                                "value": 10,
+                                "unit": "px"
+                            },
+                            "paddingRight": {
+                                "value": 10,
+                                "unit": "px"
+                            },
+                            "paddingTop": {
+                                "value": 10,
+                                "unit": "px"
+                            },
+                            "paddingBottom": {
+                                "value": 10,
+                                "unit": "px"
+                            },
+                            "flexDirection": "row"
+                        },
+                        "ports": [],
+                        "children": [
+                            {
+                                "id": "6502f260-9c83-ab13-7171-9cb7098ae0a5",
+                                "type": "Text",
+                                "x": 20,
+                                "y": 46,
+                                "parameters": {
+                                    "sizeMode": "contentSize",
+                                    "fontSize": {
+                                        "value": 24,
+                                        "unit": "px"
+                                    },
+                                    "lineHeight": 1,
+                                    "fontFamily": "Arial Black"
+                                },
+                                "ports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "68b80362-b27a-f2df-925c-641d6186d04b",
+                                "type": "Icon | Material UI",
+                                "x": 20,
+                                "y": 92,
+                                "parameters": {
+                                    "color": "#000000"
+                                },
+                                "ports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "1826a3f9-094d-6ec9-b738-305b58bd0f76",
+                                "type": "Icon | Material UI",
+                                "x": 20,
+                                "y": 286,
+                                "parameters": {
+                                    "style": "-two-tone",
+                                    "icon": "grade",
+                                    "color": "#E8423A",
+                                    "size": 100
+                                },
+                                "ports": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "8399c237-602f-8609-2cb3-0e51675c7987",
+                        "type": "Animation",
+                        "x": 68.34145195007483,
+                        "y": 270.1500155216813,
+                        "parameters": {
+                            "size.startMode": "explicit",
+                            "size.startValue": 24,
+                            "size.endValue": 120,
+                            "easingCurve": "easeInOut",
+                            "duration": 500
+                        },
+                        "ports": [
+                            {
+                                "name": "size",
+                                "plug": "output",
+                                "type": {
+                                    "name": "number"
+                                },
+                                "group": "Animation Values",
+                                "index": 1
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "86111ee9-95b8-87d5-e41f-ca87694fa56d",
+                        "type": "Timer",
+                        "x": -182.65854804992517,
+                        "y": 298.1500155216813,
+                        "parameters": {},
+                        "ports": [],
+                        "children": []
+                    }
+                ]
+            }
+        }
+    ],
+    "settings": {},
+    "rootNodeId": "e8570140-710c-df7f-2314-faa1656a4f9c",
+    "version": "1",
+    "metadata": {}
+}
