@@ -7,12 +7,6 @@
             "graph": {
                 "connections": [
                     {
-                        "fromId": "8399c237-602f-8609-2cb3-0e51675c7987",
-                        "fromProperty": "hasReachedEnd",
-                        "toId": "86111ee9-95b8-87d5-e41f-ca87694fa56d",
-                        "toProperty": "start"
-                    },
-                    {
                         "fromId": "86111ee9-95b8-87d5-e41f-ca87694fa56d",
                         "fromProperty": "timerFinished",
                         "toId": "8399c237-602f-8609-2cb3-0e51675c7987",
@@ -20,23 +14,71 @@
                     },
                     {
                         "fromId": "8399c237-602f-8609-2cb3-0e51675c7987",
+                        "fromProperty": "hasReachedEnd",
+                        "toId": "86111ee9-95b8-87d5-e41f-ca87694fa56d",
+                        "toProperty": "start"
+                    },
+                    {
+                        "fromId": "8399c237-602f-8609-2cb3-0e51675c7987",
                         "fromProperty": "size",
-                        "toId": "68b80362-b27a-f2df-925c-641d6186d04b",
+                        "toId": "1826a3f9-094d-6ec9-b738-305b58bd0f76",
                         "toProperty": "size"
                     },
                     {
-                        "fromId": "68b80362-b27a-f2df-925c-641d6186d04b",
+                        "fromId": "8399c237-602f-8609-2cb3-0e51675c7987",
+                        "fromProperty": "hasReachedStart",
+                        "toId": "939779f8-e852-22fe-3867-f19042f34625",
+                        "toProperty": "restart"
+                    },
+                    {
+                        "fromId": "939779f8-e852-22fe-3867-f19042f34625",
+                        "fromProperty": "timerFinished",
+                        "toId": "8399c237-602f-8609-2cb3-0e51675c7987",
+                        "toProperty": "replayToEnd"
+                    },
+                    {
+                        "fromId": "e8570140-710c-df7f-2314-faa1656a4f9c",
                         "fromProperty": "onClick",
                         "toId": "8399c237-602f-8609-2cb3-0e51675c7987",
-                        "toProperty": "playToEnd"
+                        "toProperty": "replayToEnd"
+                    },
+                    {
+                        "fromId": "c752352e-3fe1-3af8-5092-08b1fd323250",
+                        "fromProperty": "result",
+                        "toId": "1826a3f9-094d-6ec9-b738-305b58bd0f76",
+                        "toProperty": "color"
+                    },
+                    {
+                        "fromId": "e8570140-710c-df7f-2314-faa1656a4f9c",
+                        "fromProperty": "onClick",
+                        "toId": "711556f0-c2ab-9285-0dfc-90751e69f394",
+                        "toProperty": "replayToEnd"
+                    },
+                    {
+                        "fromId": "711556f0-c2ab-9285-0dfc-90751e69f394",
+                        "fromProperty": "blend",
+                        "toId": "c752352e-3fe1-3af8-5092-08b1fd323250",
+                        "toProperty": "blendValue"
+                    },
+                    {
+                        "fromId": "711556f0-c2ab-9285-0dfc-90751e69f394",
+                        "fromProperty": "hasReachedEnd",
+                        "toId": "9663c2e7-7103-c13f-0d15-f49740f2ead2",
+                        "toProperty": "restart"
+                    },
+                    {
+                        "fromId": "9663c2e7-7103-c13f-0d15-f49740f2ead2",
+                        "fromProperty": "timerFinished",
+                        "toId": "711556f0-c2ab-9285-0dfc-90751e69f394",
+                        "toProperty": "replayToEnd"
                     }
                 ],
                 "roots": [
                     {
                         "id": "e8570140-710c-df7f-2314-faa1656a4f9c",
                         "type": "Group",
-                        "x": 310,
-                        "y": 98,
+                        "x": 654.9012986720445,
+                        "y": -186.53118024622125,
                         "parameters": {
                             "paddingLeft": {
                                 "value": 10,
@@ -59,60 +101,57 @@
                         "ports": [],
                         "children": [
                             {
-                                "id": "6502f260-9c83-ab13-7171-9cb7098ae0a5",
-                                "type": "Text",
+                                "id": "62dd6deb-a29e-944d-a8f9-f962e8068d3a",
+                                "type": "Group",
                                 "x": 20,
-                                "y": 46,
+                                "y": 82,
                                 "parameters": {
                                     "sizeMode": "contentSize",
-                                    "fontSize": {
-                                        "value": 24,
-                                        "unit": "px"
-                                    },
-                                    "lineHeight": 1,
-                                    "fontFamily": "Arial Black"
+                                    "alignY": "center",
+                                    "alignX": "center",
+                                    "position": "absolute"
                                 },
                                 "ports": [],
-                                "children": []
-                            },
-                            {
-                                "id": "68b80362-b27a-f2df-925c-641d6186d04b",
-                                "type": "Icon | Material UI",
-                                "x": 20,
-                                "y": 92,
-                                "parameters": {
-                                    "color": "#000000"
-                                },
-                                "ports": [],
-                                "children": []
-                            },
-                            {
-                                "id": "1826a3f9-094d-6ec9-b738-305b58bd0f76",
-                                "type": "Icon | Material UI",
-                                "x": 20,
-                                "y": 286,
-                                "parameters": {
-                                    "style": "-two-tone",
-                                    "icon": "grade",
-                                    "color": "#E8423A",
-                                    "size": 100
-                                },
-                                "ports": [],
-                                "children": []
+                                "children": [
+                                    {
+                                        "id": "1826a3f9-094d-6ec9-b738-305b58bd0f76",
+                                        "type": "Icon | Material UI",
+                                        "x": 20,
+                                        "y": 46,
+                                        "parameters": {
+                                            "style": "-two-tone",
+                                            "icon": "grade",
+                                            "size": 100
+                                        },
+                                        "ports": [],
+                                        "children": []
+                                    }
+                                ]
                             }
                         ]
                     },
                     {
+                        "id": "86111ee9-95b8-87d5-e41f-ca87694fa56d",
+                        "type": "Timer",
+                        "x": -5.954272073742203,
+                        "y": -215.9754246072672,
+                        "parameters": {},
+                        "ports": [],
+                        "children": []
+                    },
+                    {
                         "id": "8399c237-602f-8609-2cb3-0e51675c7987",
                         "type": "Animation",
-                        "x": 68.34145195007483,
-                        "y": 270.1500155216813,
+                        "x": 222.28835541425246,
+                        "y": -212.74048387157725,
                         "parameters": {
                             "size.startMode": "explicit",
-                            "size.startValue": 24,
-                            "size.endValue": 120,
+                            "size.startValue": 100,
+                            "size.endValue": 300,
                             "easingCurve": "easeInOut",
-                            "duration": 500
+                            "duration": 1000,
+                            "blend.startMode": "explicit",
+                            "blend.endValue": 5
                         },
                         "ports": [
                             {
@@ -128,10 +167,67 @@
                         "children": []
                     },
                     {
-                        "id": "86111ee9-95b8-87d5-e41f-ca87694fa56d",
+                        "id": "939779f8-e852-22fe-3867-f19042f34625",
                         "type": "Timer",
-                        "x": -182.65854804992517,
-                        "y": 298.1500155216813,
+                        "x": -6.410926865053739,
+                        "y": -116.700670554574,
+                        "parameters": {
+                            "duration": 1
+                        },
+                        "ports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "c752352e-3fe1-3af8-5092-08b1fd323250",
+                        "type": "Color Blend",
+                        "x": 450.86508697657155,
+                        "y": -5.324585605671814,
+                        "parameters": {
+                            "color 0": "#E8423A",
+                            "color 1": "#EF8F45",
+                            "color 2": "#A7A04A",
+                            "color 3": "#607972",
+                            "color 4": "#006394",
+                            "color 5": "#5E4275",
+                            "color 6": "#006394",
+                            "color 7": "#607972",
+                            "color 8": "#A7A04A",
+                            "color 9": "#EF8F45",
+                            "color 10": "#E8423A"
+                        },
+                        "ports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "711556f0-c2ab-9285-0dfc-90751e69f394",
+                        "type": "Animation",
+                        "x": 226.7697750303637,
+                        "y": -5.1983993309078755,
+                        "parameters": {
+                            "easingCurve": "linear",
+                            "duration": 5000,
+                            "blend.startMode": "explicit",
+                            "blend.endValue": 10,
+                            "blend.startValue": 0
+                        },
+                        "ports": [
+                            {
+                                "name": "blend",
+                                "plug": "output",
+                                "type": {
+                                    "name": "number"
+                                },
+                                "group": "Animation Values",
+                                "index": 1
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "9663c2e7-7103-c13f-0d15-f49740f2ead2",
+                        "type": "Timer",
+                        "x": -7.093373224543797,
+                        "y": 15.124141509758317,
                         "parameters": {},
                         "ports": [],
                         "children": []
