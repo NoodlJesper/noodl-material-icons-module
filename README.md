@@ -1,4 +1,4 @@
-# noodl-material-icons
+# noodl-material-icons-module
 *Material UI Icons module for Noodl*
 
 This module adds the node "Icon | Material UI" that expose the Material UI icon font in Noodl as a simple to use node. It also sets up the project with a link to stylesheets for all styles of the material icon font. Every Icon node adds only a span-tag which makes it easy to use these nodes together with text nodes. 
