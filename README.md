@@ -5,7 +5,7 @@ This module adds the node "Icon | Material UI" that expose the Material UI icon 
 
 ![Noodl Material UI icon font animation example](material-icon-animation.gif)
 
-## Installing
+## Install
 Copy the folder `project/noodl_modules/mui-icons-module` into `your-project-folder/noodl_modules`.
 
 ## Properties
