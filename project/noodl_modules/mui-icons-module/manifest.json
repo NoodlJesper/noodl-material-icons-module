@@ -2,6 +2,8 @@
   "name": "Material UI Icons",
   "version": "0.1",
   "description": "Icon node that use the Material UI icon font.",
+  "image": "./mui-icons-module.png",
+  "docs": "./assets/readme.md",
   "main":"index.js",
   "dependencies":[],
   "browser": {
